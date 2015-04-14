@@ -1,3 +1,8 @@
+var ggSelection = {
+
+};
+
+
 var entityMap = {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': '&quot;', "'": '&#39;', "/": '&#x2F;'},
 clearText = function(txt){
 	if (/\S/.test(txt)) {
