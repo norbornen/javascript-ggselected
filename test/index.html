@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>gg selection test page</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <script src="gg.selection.js"></script>
+	<script>
+        function obfuscator() {
+            for (var i = 0, len = arguments.length; i < len; i++) {
+                var s = arguments[i];
+                (s && typeof s !== 'string')	&& (s = s.join(''));
+                s = s.replace('-at-', '@', 'g');
+                document.write(s.indexOf('@') === -1 ? s : '<a cl' + 'ass="link" hr'
+                + 'ef' + '="m' + 'ai' + 'lto' + ':' + s + '">' + s + '</a>' + ((i+1)
+                < len ? ', ' : ''));
+            }
+        }
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+            <div class="well">
+				<ul class="list-inline">
+					<li>Lorem ipsum</li>
+					<li>Phasellus iaculis</li>
+					<li>Nulla volutpat</li>
+					<li>Lorem ipsum</li>
+					<li>Phasellus iaculis</li>
+					<li>Nulla volutpat</li>
+			    </ul>
+            </div>
+			<div class="well">
+				<dl>
+					<dt>Contacts</dt>
+					<dd>
+						Phone:<br>
+						<span itemprop="telephone"><a href="tel:+18506484200">850-648-4200</a></span>
+					</dd>
+					<dd>
+						E-mail:<br>
+						<script>obfuscator(['e','x','-','a','m','_','p','l','.','e','@','e','x','a','m','p','l','e','.','c','o','m']);</script>
+					</dd>
+					<dd>Address: Lorem, ipsum.dolor, sit.13, amet.302</dd>
+					<dd>
+<i>stro҉ying all enli̍̈́̂̈́ghtenment, HTML tags <b>lea͠ki̧n͘g fr̶ǫm ̡yo&#8203;͟ur eye͢s̸
+̛l̕ik͏e liq</b>&#8203;uid p</i>
+					</dd>
+				</dl>
+			</div>
+            <div class="well">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget dolor
+                    tempus, blandit nibh vel, <em>tempor</em> ipsum. Ut rutrum ac velit aliquet
+                    imperdiet. Pellentesque varius <b>augue</b> ac blandit aliquet. Cras dapibus
+                    aliquet quam, <font color=red>et gravida nisl dignissim ut</font>. Nulla eget malesuada diam.
+                    Suspendisse odio libero, sollicitudin pulvinar ligula eget, tincidunt
+                    vulputate turpis. Sed et dui sit amet nunc aliquam tempus. Interdum et
+                    malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum
+                    primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus. Suspendisse lobortis
+                    sem neque, nec bibendum lorem bibendum sed. Quisque pharetra lectus eros,
+                    vitae finibus sapien vulputate sit amet. Praesent et nibh rhoncus, vulputate
+                    eros sed, ornare enim. Integer vel leo sit amet elit ullamcorper eleifend.
+                    Donec neque est, blandit a nunc eu, finibus ultricies nisi.
+                </p><p>
+                    In feugiat vehicula mauris ac aliquet. Aenean convallis orci et pharetra
+                    aliquet. Aliquam in vulputate nibh. Fusce at luctus neque. Aenean in
+                    pulvinar nisl. Ut sit amet purus nibh. Sed quis accumsan orci.
+                </p>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
